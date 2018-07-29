@@ -18,7 +18,6 @@ class Index extends React.Component {
         <header className="App-header">
           src="/static/logo.png"
               className="static-logo" alt="logo"
-            />
         </header>
         <div className="Grid">
           {
