@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Link from 'next/link';
 import { bindActionCreators } from 'redux';
 import withRedux from 'next-redux-wrapper';
 
@@ -16,8 +17,12 @@ class Index extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          src="/static/logo.png"
+          <Link href="/home">
+            <img 
+              src="/static/logo.png"
               className="static-logo" alt="logo"
+            />
+          </Link>
         </header>
         <div className="Grid">
           {

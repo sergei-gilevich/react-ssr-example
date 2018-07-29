@@ -14,6 +14,14 @@ app.prepare()
   .then(() => {
     const server = express();
 
+    server.get('/home', (req, res) => {
+      return app.render(req, res, '/home');
+    })
+
+    server.get('/login', (req, res) => {
+      return app.render(req, res, '/login');
+    })
+
     server.get('*', (req, res) => {
       handle(req, res);
     });
